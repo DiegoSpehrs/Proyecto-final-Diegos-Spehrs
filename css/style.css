@@ -51,7 +51,7 @@ header nav ul li:hover{
 .main-home{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 0.20fr 0.30fr 0.30fr;
     grid-template-areas: 
         "titulo-vid"
         "video"
@@ -85,10 +85,6 @@ header nav ul li:hover{
     
 }
 
-.carrusel{
-    margin: 10px;
-    width: 50%;
-}
 
 
 .derechos-reservados{
@@ -202,5 +198,6 @@ header nav ul li:hover{
         
     .derechos-reservados{
         display: inline;
+        viewport-fit: 100%;
     }
 }
