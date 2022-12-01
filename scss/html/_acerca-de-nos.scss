@@ -1,0 +1,28 @@
+.main-about-us{
+    background-color: $color-base;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.20fr 1fr;
+    grid-template-areas: 
+    "titulo"
+    "parrafo";
+    
+    .tit-about-us{
+        background-color: $color-sombreado;
+        margin: 1rem;
+        padding: 1rem;
+        width: 60%;
+        align-items: center;
+        grid-area: titulo;
+    }
+    .parrafo{
+        color: $color-textos;
+        margin: 1rem;
+        padding: 1rem;
+        width: 60%;
+        grid-area: parrafo;
+    }
+
+}
+

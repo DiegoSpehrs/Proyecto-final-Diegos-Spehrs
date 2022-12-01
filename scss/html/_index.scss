@@ -1,0 +1,127 @@
+.header{
+    background-color: $color-base;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    nav{
+        padding: 10px;
+        margin: 10px;
+        ul{
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            li:hover{
+                font-weight: bold;
+                transform: scale(0.9);
+                box-shadow: 1px 1px 2px $color-textos;
+                color: $color-textos;
+                background-color: $color-sombreado;
+            }
+            li{
+                a{
+                    color: $color-textos;
+                }
+            }
+        }
+    }
+    
+}
+
+.logo{
+    color: $color-textos;
+}
+
+.main-home{
+    background-color: $color-base;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.20fr 0.30fr 0.30fr;
+    grid-template-areas: 
+        "titulo-vid"
+        "video"
+        "pie-del-video";
+    justify-content: center;
+    justify-items: center;
+    
+    
+    .titulo-vid{
+        background-color: $color-sombreado;
+        margin: 1rem;
+        padding: 1rem;
+        justify-content: center;
+        align-items: center;
+        grid-area: titulo-vid;
+    }
+    .video{
+        margin: 0.5rem;
+        padding: 1rem;
+        grid-area: video;
+    }
+    .pie-del-video{
+        color: $color-textos;
+        margin: 0.5rem;
+        padding: 1rem;
+        grid-area: pie-del-video;
+    }
+}
+
+footer{
+    background-color: $color-base;
+    span{
+        display: none;
+    }
+    div{
+        background-color: $color-base;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .main-home{
+        background-color: $color-base;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.20fr 0.30fr;
+        grid-template-areas: 
+            "titulo-vid titulo-vid"
+            "video pie-del-video";
+    }
+    
+    .video{
+        padding: 1rem;
+        grid-area: video;
+    }
+    .pie-del-video{
+        color: $color-textos;
+        padding: 1rem;
+        justify-items: center;
+        align-content: center;
+        grid-area: pie-del-video;
+    }
+}
+
+
+@media screen and (min-width:900px){
+    .main-home{
+        background-color: $color-base;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.30fr 0.10fr;
+        grid-template-areas: 
+            "titulo-vid titulo-vid"
+            "video pie-del-video";
+            .pie-del-video{
+                width: 65%;
+
+            }
+    }
+
+    .derechos-reservados{
+        display: inline;
+        viewport-fit: 100%;
+    }
+}

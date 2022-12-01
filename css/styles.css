@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.header {
+  background-color: #dcc2f7;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .header nav {
+    padding: 10px;
+    margin: 10px; }
+    .header nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem; }
+      .header nav ul li:hover {
+        font-weight: bold;
+        transform: scale(0.9);
+        box-shadow: 1px 1px 2px black;
+        color: black;
+        background-color: #b990ef; }
+      .header nav ul li a {
+        color: black; }
+
+.logo {
+  color: black; }
+
+.main-home {
+  background-color: #dcc2f7;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.20fr 0.30fr 0.30fr;
+  grid-template-areas: "titulo-vid" "video" "pie-del-video";
+  justify-content: center;
+  justify-items: center; }
+  .main-home .titulo-vid {
+    background-color: #b990ef;
+    margin: 1rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    grid-area: titulo-vid; }
+  .main-home .video {
+    margin: 0.5rem;
+    padding: 1rem;
+    grid-area: video; }
+  .main-home .pie-del-video {
+    color: black;
+    margin: 0.5rem;
+    padding: 1rem;
+    grid-area: pie-del-video; }
+
+footer {
+  background-color: #dcc2f7; }
+  footer span {
+    display: none; }
+  footer div {
+    background-color: #dcc2f7;
+    position: fixed;
+    bottom: 0;
+    right: 0; }
+
+@media screen and (min-width: 768px) {
+  .main-home {
+    background-color: #dcc2f7;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.20fr 0.30fr;
+    grid-template-areas: "titulo-vid titulo-vid" "video pie-del-video"; }
+  .video {
+    padding: 1rem;
+    grid-area: video; }
+  .pie-del-video {
+    color: black;
+    padding: 1rem;
+    justify-items: center;
+    align-content: center;
+    grid-area: pie-del-video; } }
+
+@media screen and (min-width: 900px) {
+  .main-home {
+    background-color: #dcc2f7;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.30fr 0.10fr;
+    grid-template-areas: "titulo-vid titulo-vid" "video pie-del-video"; }
+    .main-home .pie-del-video {
+      width: 65%; }
+  .derechos-reservados {
+    display: inline;
+    viewport-fit: 100%; } }
+
+.main-about-us {
+  background-color: #dcc2f7;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.20fr 1fr;
+  grid-template-areas: "titulo" "parrafo"; }
+  .main-about-us .tit-about-us {
+    background-color: #b990ef;
+    margin: 1rem;
+    padding: 1rem;
+    width: 60%;
+    align-items: center;
+    grid-area: titulo; }
+  .main-about-us .parrafo {
+    color: black;
+    margin: 1rem;
+    padding: 1rem;
+    width: 60%;
+    grid-area: parrafo; }
+
+.grid-syp {
+  background-color: #dcc2f7;
+  display: grid;
+  height: 725px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.20fr 0.30fr 0.30fr 0.30fr .030;
+  grid-template-areas: "titulo-syp" "servicios" "servicios-dos" "promociones" "promociones-dos";
+  justify-content: center;
+  justify-items: center; }
+  .grid-syp .titulo-syp {
+    background-color: #b990ef;
+    padding: 10px;
+    margin: 10px;
+    grid-area: titulo-syp; }
+  .grid-syp .servicio {
+    background-color: #b990ef;
+    margin: 1rem;
+    padding: 1rem;
+    list-style: none;
+    width: 75%;
+    grid-area: servicios; }
+  .grid-syp .servicio-dos {
+    background-color: #b990ef;
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+    width: 75%;
+    grid-area: servicios-dos; }
+  .grid-syp .promociones {
+    background-color: #b990ef;
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+    width: 75%;
+    grid-area: promociones; }
+  .grid-syp .promociones-dos {
+    background-color: #b990ef;
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+    width: 75%;
+    grid-area: promociones-dos; }
+
+@media screen and (min-width: 992px) {
+  .grid-syp {
+    display: grid;
+    height: 525px;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 0.20 0.30 0.30;
+    grid-template-areas: "titulo-syp titulo-syp" "servicios servicios-dos" "promociones promociones-dos";
+    justify-content: flex-start;
+    justify-items: center; }
+  .derechos-reservados {
+    display: inline;
+    viewport-fit: 100%; } }
