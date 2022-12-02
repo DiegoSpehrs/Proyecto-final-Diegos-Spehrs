@@ -1,0 +1,34 @@
+.main-contacto{
+    background-color: $color-base;
+    padding: 1rem;
+    height: 530px;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 0.20fr 0.30fr;
+    grid-template-areas: 
+        "titulo-formulario"
+        "formulario";
+    .titulo-formulario{
+        background-color: $color-sombreado;
+        @include m-p(1rem, 1rem); 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: titulo-formulario;
+    }
+    .formulario{
+        @include m-p(1rem, 1rem); 
+        grid-area: formulario;
+        text-align: center;
+    }
+    
+}
+
+@media screen and (min-width:768px) {
+    .derechos-reservados{
+        display: inline;
+        display: flex;
+        justify-content: center;
+        viewport-fit: 100%;
+    }
+}

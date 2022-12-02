@@ -1,6 +1,6 @@
 .main-about-us{
     background-color: $color-base;
-    height: 500px;
+    height: 530px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.20fr 1fr;
@@ -10,19 +10,45 @@
     
     .tit-about-us{
         background-color: $color-sombreado;
-        margin: 1rem;
-        padding: 1rem;
-        width: 60%;
+        display: flex;
+        justify-content: center;
         align-items: center;
+        @include m-p(1rem, 1rem); 
+        width: 60%;
         grid-area: titulo;
     }
     .parrafo{
+        display: flex;
+        justify-items: center;
         color: $color-textos;
-        margin: 1rem;
-        padding: 1rem;
+        @include m-p(1rem, 1rem); 
         width: 60%;
+        text-align: center;
         grid-area: parrafo;
     }
 
+}
+
+footer{
+    .derechos-reservados{
+        display: none;
+    }   
+}
+
+
+@media screen and (min-width:768px){
+    .main-about-us{
+        height: 515px;
+    }
+    
+    footer{
+        .derechos-reservados{
+            display: inline;
+            display: flex;
+            justify-content: center;
+            viewport-fit: 100%;
+        }
+    }
+    
 }
 

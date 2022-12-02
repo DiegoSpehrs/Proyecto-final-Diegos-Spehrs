@@ -5,9 +5,14 @@
 }
 
 @import "utilidades/variables";
+@import "utilidades/mixin";
+@import "utilidades/extend";
+
 @import "html/index";
 @import "html/acerca-de-nos";
-@import "html/servicios"; 
+@import "html/servicios";
+@import "html/contacto";
+@import "html/catalogo"; 
 
 
 

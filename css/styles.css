@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box; }
 
+.main-home .titulo-vid, .main-home .pie-del-video {
+  text-align: center;
+  color: black; }
+
 .header {
   background-color: #dcc2f7;
   padding: 10px;
@@ -10,8 +14,8 @@
   justify-content: space-between;
   align-items: center; }
   .header nav {
-    padding: 10px;
-    margin: 10px; }
+    margin: 1rem;
+    padding: 1rem; }
     .header nav ul {
       list-style: none;
       display: flex;
@@ -37,7 +41,6 @@
   justify-content: center;
   justify-items: center; }
   .main-home .titulo-vid {
-    background-color: #b990ef;
     margin: 1rem;
     padding: 1rem;
     justify-content: center;
@@ -48,7 +51,6 @@
     padding: 1rem;
     grid-area: video; }
   .main-home .pie-del-video {
-    color: black;
     margin: 0.5rem;
     padding: 1rem;
     grid-area: pie-del-video; }
@@ -78,7 +80,8 @@ footer {
     padding: 1rem;
     justify-items: center;
     align-content: center;
-    grid-area: pie-del-video; } }
+    grid-area: pie-del-video;
+    text-align: center; } }
 
 @media screen and (min-width: 900px) {
   .main-home {
@@ -92,28 +95,47 @@ footer {
       width: 65%; }
   .derechos-reservados {
     display: inline;
+    display: flex;
+    justify-content: center;
     viewport-fit: 100%; } }
 
 .main-about-us {
   background-color: #dcc2f7;
-  height: 500px;
+  height: 530px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.20fr 1fr;
   grid-template-areas: "titulo" "parrafo"; }
   .main-about-us .tit-about-us {
     background-color: #b990ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 1rem;
     padding: 1rem;
     width: 60%;
-    align-items: center;
     grid-area: titulo; }
   .main-about-us .parrafo {
+    display: flex;
+    justify-items: center;
     color: black;
     margin: 1rem;
     padding: 1rem;
     width: 60%;
+    text-align: center;
     grid-area: parrafo; }
+
+footer .derechos-reservados {
+  display: none; }
+
+@media screen and (min-width: 768px) {
+  .main-about-us {
+    height: 515px; }
+  footer .derechos-reservados {
+    display: inline;
+    display: flex;
+    justify-content: center;
+    viewport-fit: 100%; } }
 
 .grid-syp {
   background-color: #dcc2f7;
@@ -126,8 +148,8 @@ footer {
   justify-items: center; }
   .grid-syp .titulo-syp {
     background-color: #b990ef;
-    padding: 10px;
-    margin: 10px;
+    margin: 1rem;
+    padding: 1rem;
     grid-area: titulo-syp; }
   .grid-syp .servicio {
     background-color: #b990ef;
@@ -138,22 +160,22 @@ footer {
     grid-area: servicios; }
   .grid-syp .servicio-dos {
     background-color: #b990ef;
-    margin: 10px;
-    padding: 10px;
+    margin: 1rem;
+    padding: 1rem;
     list-style: none;
     width: 75%;
     grid-area: servicios-dos; }
   .grid-syp .promociones {
     background-color: #b990ef;
-    margin: 10px;
-    padding: 10px;
+    margin: 1rem;
+    padding: 1rem;
     list-style: none;
     width: 75%;
     grid-area: promociones; }
   .grid-syp .promociones-dos {
     background-color: #b990ef;
-    margin: 10px;
-    padding: 10px;
+    margin: 1rem;
+    padding: 1rem;
     list-style: none;
     width: 75%;
     grid-area: promociones-dos; }
@@ -162,11 +184,65 @@ footer {
   .grid-syp {
     display: grid;
     height: 525px;
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.20 0.30 0.30;
     grid-template-areas: "titulo-syp titulo-syp" "servicios servicios-dos" "promociones promociones-dos";
     justify-content: flex-start;
     justify-items: center; }
   .derechos-reservados {
     display: inline;
+    display: flex;
+    justify-content: center;
     viewport-fit: 100%; } }
+
+.main-contacto {
+  background-color: #dcc2f7;
+  padding: 1rem;
+  height: 530px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.20fr 0.30fr;
+  grid-template-areas: "titulo-formulario" "formulario"; }
+  .main-contacto .titulo-formulario {
+    background-color: #b990ef;
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: titulo-formulario; }
+  .main-contacto .formulario {
+    margin: 1rem;
+    padding: 1rem;
+    grid-area: formulario;
+    text-align: center; }
+
+@media screen and (min-width: 768px) {
+  .derechos-reservados {
+    display: inline;
+    display: flex;
+    justify-content: center;
+    viewport-fit: 100%; } }
+
+.main-cat {
+  background-color: #dcc2f7;
+  height: 530px;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.20fr 0.30fr;
+  grid-template-areas: "titulo-cat" "carrusel"; }
+  .main-cat .titulo-cat {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #b990ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-area: titulo-cat; }
+  .main-cat .carrusel {
+    margin: 1rem;
+    padding: 1rem;
+    width: 75%;
+    grid-area: carrusel; }

@@ -5,8 +5,7 @@
     justify-content: space-between;
     align-items: center;
     nav{
-        padding: 10px;
-        margin: 10px;
+        @include m-p(1rem, 1rem); 
         ul{
             list-style: none;
             display: flex;
@@ -46,22 +45,19 @@
     
     
     .titulo-vid{
-        background-color: $color-sombreado;
-        margin: 1rem;
-        padding: 1rem;
+        @extend %estilosTextos;
+        @include m-p(1rem, 1rem); 
         justify-content: center;
         align-items: center;
         grid-area: titulo-vid;
     }
     .video{
-        margin: 0.5rem;
-        padding: 1rem;
+        @include m-p(0.5rem, 1rem); 
         grid-area: video;
     }
     .pie-del-video{
-        color: $color-textos;
-        margin: 0.5rem;
-        padding: 1rem;
+        @extend %estilosTextos;
+        @include m-p(0.5rem, 1rem); 
         grid-area: pie-del-video;
     }
 }
@@ -95,7 +91,7 @@ footer{
         grid-area: video;
     }
     .pie-del-video{
-        color: $color-textos;
+        @extend %estilosTextos;
         padding: 1rem;
         justify-items: center;
         align-content: center;
@@ -122,6 +118,8 @@ footer{
 
     .derechos-reservados{
         display: inline;
+        display: flex;
+        justify-content: center;
         viewport-fit: 100%;
     }
 }

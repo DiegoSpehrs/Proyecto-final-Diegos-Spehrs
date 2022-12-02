@@ -1,0 +1,25 @@
+.main-cat{
+    background-color: $color-base;
+    height: 530px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 0.20fr 0.30fr;
+    grid-template-areas: 
+        "titulo-cat"
+        "carrusel";
+    .titulo-cat{
+        @include m-p(1rem, 1rem); 
+        background-color: $color-sombreado;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        grid-area: titulo-cat;
+    }
+    .carrusel{
+        @include m-p(1rem, 1rem); 
+        width: 75%;
+        grid-area: carrusel;
+    }    
+}

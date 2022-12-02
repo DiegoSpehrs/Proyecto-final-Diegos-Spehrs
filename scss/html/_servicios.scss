@@ -14,38 +14,33 @@
     justify-items: center;
     .titulo-syp{
         background-color: #b990ef;
-        padding: 10px;
-        margin: 10px;
+        @include m-p(1rem, 1rem); 
         grid-area: titulo-syp;
     }
     .servicio{
         background-color: $color-sombreado;
-        margin: 1rem;
-        padding: 1rem;
+        @include m-p(1rem, 1rem); 
         list-style: none;
         width: 75%;
         grid-area: servicios;
     }
     .servicio-dos{
         background-color: $color-sombreado;
-        margin: 10px;
-        padding: 10px;
+        @include m-p(1rem, 1rem); 
         list-style: none;
         width: 75%;
         grid-area: servicios-dos;
     }
     .promociones{
         background-color: $color-sombreado;
-        margin: 10px;
-        padding: 10px;
+        @include m-p(1rem, 1rem); 
         list-style: none;
         width: 75%;
         grid-area: promociones;
     } 
     .promociones-dos{
         background-color: $color-sombreado;
-        margin: 10px;
-        padding: 10px;
+        @include m-p(1rem, 1rem); 
         list-style: none;
         width: 75%;
         grid-area: promociones-dos;
@@ -58,7 +53,7 @@
     .grid-syp{
         display: grid;
         height: 525px;
-        grid-template-columns: 2fr 2fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 0.20 0.30 0.30;
         grid-template-areas: 
             "titulo-syp titulo-syp"
@@ -70,6 +65,8 @@
         
     .derechos-reservados{
         display: inline;
+        display: flex;
+        justify-content: center;
         viewport-fit: 100%;
     }
 }
