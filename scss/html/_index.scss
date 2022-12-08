@@ -1,31 +1,22 @@
-.header{
+header{
     background-color: $color-base;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    nav{
-        @include m-p(1rem, 1rem); 
-        ul{
-            list-style: none;
-            display: flex;
-            gap: 1rem;
-            li:hover{
-                font-weight: bold;
-                transform: scale(0.9);
-                box-shadow: 1px 1px 2px $color-textos;
-                color: $color-textos;
-                background-color: $color-sombreado;
-            }
-            li{
-                a{
-                    color: $color-textos;
-                }
-            }
+    .logo{
+        display: none;
+    }
+    .menus{
+        display: none;
+    }
+    .menu-hamburguesa{
+        .desplegable-header{
+            background-color: $color-sombreado;
+        }
+        .desplegable-body{
+            background-color: $color-base;
         }
     }
-    
 }
+    
+
 
 .logo{
     color: $color-textos;
@@ -76,6 +67,45 @@ footer{
 }
 
 @media screen and (min-width:768px) {
+    .header{
+        background-color: $color-base;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        nav{
+            @include m-p(1rem, 1rem); 
+            ul{
+                list-style: none;
+                display: flex;
+                gap: 1rem;
+                li:hover{
+                    font-weight: bold;
+                    transform: scale(0.9);
+                    box-shadow: 1px 1px 2px $color-textos;
+                    color: $color-textos;
+                    background-color: $color-sombreado;
+                }
+                li{
+                    a{
+                        color: $color-textos;
+                    }
+                }
+            }
+        }
+        .menus{
+            display: block;
+        }
+        .logo{
+            display: block;
+        }
+    } 
+       
+        .menu-hamburguesa{
+            display: none;
+        }
+    
+    
     .main-home{
         background-color: $color-base;
         display: grid;
@@ -91,7 +121,8 @@ footer{
         grid-area: video;
     }
     .pie-del-video{
-        @extend %estilosTextos;
+        text-align: center;
+        color: $color-textos;
         padding: 1rem;
         justify-items: center;
         align-content: center;

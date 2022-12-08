@@ -11,20 +11,21 @@
     .tit-about-us{
         background-color: $color-sombreado;
         display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
         @include m-p(1rem, 1rem); 
-        width: 60%;
         grid-area: titulo;
     }
     .parrafo{
+        
         display: flex;
         justify-items: center;
         color: $color-textos;
         @include m-p(1rem, 1rem); 
-        width: 60%;
         text-align: center;
         grid-area: parrafo;
+        font-weight: bold;
+        font-size: 1.5rem;
     }
 
 }
@@ -47,7 +48,7 @@ footer{
             display: flex;
             justify-content: center;
             viewport-fit: 100%;
-        }
+        } 
     }
     
 }

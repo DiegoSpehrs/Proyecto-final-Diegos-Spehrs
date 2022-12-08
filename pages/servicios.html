@@ -6,6 +6,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link css boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!--link mi css-->
     <link rel="stylesheet" href="../css/styles.css">
     <title>Servicios</title>
@@ -16,7 +19,39 @@
             <a href="../index.html">
               <img src="../img/SH-logo.webp" alt="Logo">
             </a>
+        </div>
+        
+        <nav class="navbar bg-#dcc2f7  menu-hamburguesa">
+          <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img src="../img/SH-logo.webp" alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header desplegable-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
+          <div class="offcanvas-body desplegable-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./catalogo.html">catalogo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./servicios.html">servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./acerca-de-nos.html">sobre nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">contacto</a>
+              </li> 
+            </ul>
+          </div>
+        </div>
+       </div>
+      </nav>
+
         <nav class="menus">
             <ul>
                 <li class="catalogo">
@@ -39,37 +74,37 @@
         <h1 class="titulo-syp">Servicios y Promociones</h1>
 
         <ol class="servicio">
-            <li>Servicio 1</li>
-            <li>Servicio 2</li>
-            <li>Servicio 3</li>
-            <li>Servicio 4</li>
-            <li>Servicio 5</li>
+            <li>MANOS TRADICIONAL....$1300</li>
+            <li>MANOS SEMI-PERMANENTE....$1800</li>
+            <li>PODOLOGIA....$2000</li>
+            <li>POD.C/ESMLT-SEMI....$2800</li>
+            <li>POD.C/ESMLT-TRADICIONAL....$2500</li>
             
         </ol>
 
         <ol class="servicio-dos">
-            <li>Servicio 6</li>
-            <li>Servicio 7</li>
-            <li>Servicio 8</li>
-            <li>Servicio 9</li>
-            <li>Servicio 10</li>
+            <li>LIMP.CUTIS....$3000</li>
+            <li>LIMP.CUTIS C/ESPATULA-ULTRASONICA....3500$</li>
+            <li>TRATAMIENTO ANTI-ACNE....$3250</li>
+            <li>TRATAMIENTO P/PIEL-ROSASEA....$3000</li>
+            <li>DEPILACION COMPLETA....$4000</li>
             
         </ol>
 
         <ol class="promociones">
-            <li>promocion 1</li>
-            <li>promocion 2</li>
-            <li>promocion 3</li>
-            <li>promocion 4</li>
-            <li>promocion 5</li>
+            <li>MANOS Y PED.TRADICIONAL....$3000</li>
+            <li>MANOS Y PED.SEMI....$3800</li>
+            <li>BELLEZA DE PIE TRAD. Y ESMALTE A ELECCION....$2000</li>
+            <li>BELLEZA SEMI Y ESMALTE A ELECCION....$3000</li>
+            <li>COMBO CREMAS DE LIMPIEZA FACIAL....$5000</li>
         </ol>
     
         <ol class="promociones-dos">
-            <li>promocion 6</li>
-            <li>promocion 7</li>
-            <li>promocion 8</li>
-            <li>promocion 9</li>
-            <li>promocion 10</li>
+            <li>COMBO PORF.NAILS....$4500</li>
+            <li>COMBO TOP-COAT....$6000</li>
+            <li>COMBO MASCARA DE BARRO....$3500</li>
+            <li>TRATAMIENTO FACIAL Y CREMA DE LIMPIEZA....$5000</li>
+            <li>COMBO LIMPIEZA Y EXTRACCION....$5000</li>
         </ol>
     
     
@@ -78,10 +113,14 @@
     <footer class="footer">
         <span class="derechos-reservados">Todos los derechos reservados</span>
         <div class="boton-wp">
-            <a href="">
+            <a href="https://api.whatsapp.com/send/?phone=541112453689&text&type=phone_number&app_absent=0">
                 <img src="../img/boton-wp.webp" alt="Boton wathsapp">
               </a>
         </div>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
 </body>
 </html>
