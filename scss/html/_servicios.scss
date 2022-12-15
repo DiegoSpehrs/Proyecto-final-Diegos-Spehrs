@@ -23,6 +23,11 @@
         list-style: none;
         width: 75%;
         grid-area: servicios;
+        border: 1px solid black;
+        li{
+            margin: 1px;
+            border: 1px solid black;
+        }
     }
     .servicio-dos{
         background-color: $color-sombreado;
@@ -30,6 +35,11 @@
         list-style: none;
         width: 75%;
         grid-area: servicios-dos;
+        border: 1px solid black;
+        li{
+            margin: 1px;
+            border: 1px solid black;
+        }
     }
     .promociones{
         background-color: $color-sombreado;
@@ -37,6 +47,11 @@
         list-style: none;
         width: 75%;
         grid-area: promociones;
+        border: 1px solid black;
+        li{
+            margin: 1px;
+            border: 1px solid black;
+        }
     } 
     .promociones-dos{
         background-color: $color-sombreado;
@@ -44,6 +59,11 @@
         list-style: none;
         width: 75%;
         grid-area: promociones-dos;
+        border: 1px solid black;
+        li{
+            margin: 1px;
+            border: 1px solid black;
+        }
     }   
 
 
@@ -55,7 +75,7 @@
     .grid-syp{
         display: grid;
         height: 525px;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 0.5fr 0.5fr;
         grid-template-rows: 0.20 0.30 0.30;
         grid-template-areas: 
             "titulo-syp titulo-syp"
@@ -67,6 +87,7 @@
         
     .derechos-reservados{
         display: inline;
+        padding: 20px;
         display: flex;
         justify-content: center;
     }
