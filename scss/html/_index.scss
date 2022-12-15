@@ -55,14 +55,12 @@ header{
 
 footer{
     background-color: $color-base;
+    
     span{
         display: none;
     }
     div{
-        background-color: $color-base;
-        position: fixed;
-        bottom: 0;
-        right: 0;
+        display: none;
     }
 }
 
@@ -101,9 +99,9 @@ footer{
         }
     } 
        
-        .menu-hamburguesa{
-            display: none;
-        }
+    .menu-hamburguesa{
+        display: none;
+    }
     
     
     .main-home{
@@ -128,6 +126,15 @@ footer{
         align-content: center;
         grid-area: pie-del-video;
     }
+    footer{
+        .derechos-reservados{
+                display: inline;
+                display: flex;
+                justify-content: center;
+                padding-bottom:75px;
+                
+        }
+    }
 }
 
 
@@ -147,10 +154,15 @@ footer{
             }
     }
 
-    .derechos-reservados{
-        display: inline;
-        display: flex;
-        justify-content: center;
-        viewport-fit: 100%;
+    footer{
+        .boton-wp{
+            display: block;
+            background-color: $color-base;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            height: 20%;
+            width: 10%;
+        }    
     }
 }

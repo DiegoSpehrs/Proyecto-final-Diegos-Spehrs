@@ -49,10 +49,7 @@ footer {
   footer span {
     display: none; }
   footer div {
-    background-color: #dcc2f7;
-    position: fixed;
-    bottom: 0;
-    right: 0; }
+    display: none; }
 
 @media screen and (min-width: 768px) {
   .header {
@@ -97,7 +94,12 @@ footer {
     padding: 1rem;
     justify-items: center;
     align-content: center;
-    grid-area: pie-del-video; } }
+    grid-area: pie-del-video; }
+  footer .derechos-reservados {
+    display: inline;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 75px; } }
 
 @media screen and (min-width: 900px) {
   .main-home {
@@ -109,11 +111,14 @@ footer {
     grid-template-areas: "titulo-vid titulo-vid" "video pie-del-video"; }
     .main-home .pie-del-video {
       width: 65%; }
-  .derechos-reservados {
-    display: inline;
-    display: flex;
-    justify-content: center;
-    viewport-fit: 100%; } }
+  footer .boton-wp {
+    display: block;
+    background-color: #dcc2f7;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 20%;
+    width: 10%; } }
 
 .main-about-us {
   background-color: #dcc2f7;
@@ -150,8 +155,7 @@ footer .derechos-reservados {
   footer .derechos-reservados {
     display: inline;
     display: flex;
-    justify-content: center;
-    viewport-fit: 100%; } }
+    justify-content: center; } }
 
 .grid-syp {
   background-color: #dcc2f7;
@@ -196,10 +200,6 @@ footer .derechos-reservados {
     width: 75%;
     grid-area: promociones-dos; }
 
-.boton-wp {
-  height: 20%;
-  width: 10%; }
-
 @media screen and (min-width: 992px) {
   .grid-syp {
     display: grid;
@@ -212,8 +212,7 @@ footer .derechos-reservados {
   .derechos-reservados {
     display: inline;
     display: flex;
-    justify-content: center;
-    viewport-fit: 100%; } }
+    justify-content: center; } }
 
 .main-contacto {
   background-color: #dcc2f7;
@@ -241,8 +240,7 @@ footer .derechos-reservados {
   .derechos-reservados {
     display: inline;
     display: flex;
-    justify-content: center;
-    viewport-fit: 100%; } }
+    justify-content: center; } }
 
 .main-cat {
   background-color: #dcc2f7;
