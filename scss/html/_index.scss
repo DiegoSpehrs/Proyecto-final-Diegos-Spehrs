@@ -1,3 +1,4 @@
+/*estilos de header mobile*/
 header{
     background-color: $color-base;
     .logo{
@@ -17,11 +18,11 @@ header{
 }
     
 
-
+/*estilo del logo*/
 .logo{
     color: $color-textos;
 }
-
+/*estilos de main de index*/
 .main-home{
     background-color: $color-base;
     display: grid;
@@ -34,7 +35,7 @@ header{
     justify-content: center;
     justify-items: center;
     
-    
+/*estilos de titulo del video index*/    
     .titulo-vid{
         @extend %estilosTextos;
         @include m-p(1rem, 1rem); 
@@ -42,29 +43,33 @@ header{
         align-items: center;
         grid-area: titulo-vid;
     }
+/*estilos de video index*/    
     .video{
         @include m-p(0.5rem, 1rem); 
         grid-area: video;
     }
+/*estilos del pie del video index*/    
     .pie-del-video{
         @extend %estilosTextos;
         @include m-p(0.5rem, 1rem); 
         grid-area: pie-del-video;
     }
 }
-
+/*estilos de footer mobile*/
 footer{
     background-color: $color-base;
-    
+/*estilo de derechos reservados mobile*/    
     span{
         display: none;
     }
+/*estilo de boton de wsp mobile*/    
     div{
         display: none;
     }
 }
-
+/*media query tablet de index*/
 @media screen and (min-width:768px) {
+/*estilos del header tablet index*/    
     .header{
         background-color: $color-base;
         padding: 10px;
@@ -91,19 +96,21 @@ footer{
                 }
             }
         }
+/*estilo del menu tablet*/        
         .menus{
             display: block;
         }
+/*estilo del logo tablet*/        
         .logo{
             display: block;
         }
     } 
-       
+/*estilo del menu hamburguesa tablet*/       
     .menu-hamburguesa{
         display: none;
     }
     
-    
+/*estilos de main tablet index*/    
     .main-home{
         background-color: $color-base;
         display: grid;
@@ -113,11 +120,12 @@ footer{
             "titulo-vid titulo-vid"
             "video pie-del-video";
     }
-    
+/*estilos de video tablet index*/    
     .video{
         padding: 1rem;
         grid-area: video;
     }
+/*estilos de pie del video tablet index*/
     .pie-del-video{
         text-align: center;
         color: $color-textos;
@@ -126,8 +134,10 @@ footer{
         align-content: center;
         grid-area: pie-del-video;
     }
+/*estilo de footer tablet*/    
     footer{
         padding: 0.5rem;
+/*estilos de derechos reservados tablet*/        
         .derechos-reservados{
                 display: inline;
                 padding: 0.5rem;
@@ -139,8 +149,9 @@ footer{
     }
 }
 
-
+/*media query desktop*/
 @media screen and (min-width:900px){
+/*estilos de mian desktop*/    
     .main-home{
         background-color: $color-base;
         display: grid;
@@ -155,8 +166,9 @@ footer{
 
             }
     }
-
+/*estilos de footer desktop*/
     footer{
+/*estilos de boton de wsp desktop*/        
         .boton-wp{
             display: flex;
             justify-content: center;

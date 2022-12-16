@@ -7,6 +7,7 @@
   text-align: center;
   color: black; }
 
+/*estilos de header mobile*/
 header {
   background-color: #dcc2f7; }
   header .logo {
@@ -18,9 +19,11 @@ header {
   header .menu-hamburguesa .desplegable-body {
     background-color: #dcc2f7; }
 
+/*estilo del logo*/
 .logo {
   color: black; }
 
+/*estilos de main de index*/
 .main-home {
   background-color: #dcc2f7;
   display: grid;
@@ -28,7 +31,10 @@ header {
   grid-template-rows: 0.20fr 0.30fr 0.30fr;
   grid-template-areas: "titulo-vid" "video" "pie-del-video";
   justify-content: center;
-  justify-items: center; }
+  justify-items: center;
+  /*estilos de titulo del video index*/
+  /*estilos de video index*/
+  /*estilos del pie del video index*/ }
   .main-home .titulo-vid {
     margin: 1rem;
     padding: 1rem;
@@ -44,20 +50,27 @@ header {
     padding: 1rem;
     grid-area: pie-del-video; }
 
+/*estilos de footer mobile*/
 footer {
-  background-color: #dcc2f7; }
+  background-color: #dcc2f7;
+  /*estilo de derechos reservados mobile*/
+  /*estilo de boton de wsp mobile*/ }
   footer span {
     display: none; }
   footer div {
     display: none; }
 
+/*media query tablet de index*/
 @media screen and (min-width: 768px) {
+  /*estilos del header tablet index*/
   .header {
     background-color: #dcc2f7;
     padding: 10px;
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    /*estilo del menu tablet*/
+    /*estilo del logo tablet*/ }
     .header nav {
       margin: 1rem;
       padding: 1rem; }
@@ -77,17 +90,21 @@ footer {
       display: block; }
     .header .logo {
       display: block; }
+  /*estilo del menu hamburguesa tablet*/
   .menu-hamburguesa {
     display: none; }
+  /*estilos de main tablet index*/
   .main-home {
     background-color: #dcc2f7;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.20fr 0.30fr;
     grid-template-areas: "titulo-vid titulo-vid" "video pie-del-video"; }
+  /*estilos de video tablet index*/
   .video {
     padding: 1rem;
     grid-area: video; }
+  /*estilos de pie del video tablet index*/
   .pie-del-video {
     text-align: center;
     color: black;
@@ -95,8 +112,10 @@ footer {
     justify-items: center;
     align-content: center;
     grid-area: pie-del-video; }
+  /*estilo de footer tablet*/
   footer {
-    padding: 0.5rem; }
+    padding: 0.5rem;
+    /*estilos de derechos reservados tablet*/ }
     footer .derechos-reservados {
       display: inline;
       padding: 0.5rem;
@@ -104,7 +123,9 @@ footer {
       justify-content: center;
       padding-bottom: 75px; } }
 
+/*media query desktop*/
 @media screen and (min-width: 900px) {
+  /*estilos de mian desktop*/
   .main-home {
     background-color: #dcc2f7;
     display: grid;
@@ -114,23 +135,29 @@ footer {
     grid-template-areas: "titulo-vid titulo-vid" "video pie-del-video"; }
     .main-home .pie-del-video {
       width: 65%; }
-  footer .boton-wp {
-    display: flex;
-    justify-content: center;
-    background-color: #dcc2f7;
-    position: fixed;
-    bottom: 40px;
-    right: 10px;
-    height: 10%;
-    width: 5%; } }
+  /*estilos de footer desktop*/
+  footer {
+    /*estilos de boton de wsp desktop*/ }
+    footer .boton-wp {
+      display: flex;
+      justify-content: center;
+      background-color: #dcc2f7;
+      position: fixed;
+      bottom: 40px;
+      right: 10px;
+      height: 10%;
+      width: 5%; } }
 
+/* estilos de main aboust-us*/
 .main-about-us {
   background-color: #dcc2f7;
   height: 530px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.20fr 1fr;
-  grid-template-areas: "titulo" "parrafo"; }
+  grid-template-areas: "titulo" "parrafo";
+  /*estilos de titulo about-us*/
+  /*estilos de parrafo about-us*/ }
   .main-about-us .tit-about-us {
     background-color: #b990ef;
     display: flex;
@@ -150,17 +177,21 @@ footer {
     font-weight: bold;
     font-size: 1.5rem; }
 
+/*estilos de footer about-us*/
 footer .derechos-reservados {
   display: none; }
 
+/*media query tablet about-us*/
 @media screen and (min-width: 768px) {
   .main-about-us {
     height: 515px; }
+  /*estilos tablet del footer about-us*/
   footer .derechos-reservados {
     display: inline;
     display: flex;
     justify-content: center; } }
 
+/*estilos de main servicios*/
 .grid-syp {
   background-color: #dcc2f7;
   display: grid;
@@ -169,7 +200,12 @@ footer .derechos-reservados {
   grid-template-rows: 0.20fr 0.30fr 0.30fr 0.30fr .030;
   grid-template-areas: "titulo-syp" "servicios" "servicios-dos" "promociones" "promociones-dos";
   justify-content: center;
-  justify-items: center; }
+  justify-items: center;
+  /*estilos de titulo servicios*/
+  /*estilos de servicios 1*/
+  /*estilos de servicios 2*/
+  /*estilos de promociones 1*/
+  /*estilos de promociones 2*/ }
   .grid-syp .titulo-syp {
     background-color: #b990ef;
     margin: 1rem;
@@ -220,7 +256,9 @@ footer .derechos-reservados {
       margin: 1px;
       border: 1px solid black; }
 
+/*media query desktop de servicios*/
 @media screen and (min-width: 992px) {
+  /*estilos de main desktop servicios*/
   .grid-syp {
     display: grid;
     height: 525px;
@@ -229,12 +267,14 @@ footer .derechos-reservados {
     grid-template-areas: "titulo-syp titulo-syp" "servicios servicios-dos" "promociones promociones-dos";
     justify-content: flex-start;
     justify-items: center; }
+  /*estilos de footer desktop servicios*/
   .derechos-reservados {
     display: inline;
     padding: 20px;
     display: flex;
     justify-content: center; } }
 
+/*estilos de main de contacto*/
 .main-contacto {
   background-color: #dcc2f7;
   padding: 1rem;
@@ -242,7 +282,9 @@ footer .derechos-reservados {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.20fr 0.30fr;
-  grid-template-areas: "titulo-formulario" "formulario"; }
+  grid-template-areas: "titulo-formulario" "formulario";
+  /*estilos del titulo de formulario contacto*/
+  /*estilos del formulario contacto*/ }
   .main-contacto .titulo-formulario {
     background-color: #b990ef;
     margin: 1rem;
@@ -257,7 +299,9 @@ footer .derechos-reservados {
     grid-area: formulario;
     text-align: center; }
 
+/*media query tablet de contacto*/
 @media screen and (min-width: 768px) {
+  /*estilos de derechos reservados tablet de contacto*/
   .derechos-reservados {
     display: inline;
     display: flex;

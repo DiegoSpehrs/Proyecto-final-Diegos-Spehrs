@@ -1,3 +1,4 @@
+/*estilos de main servicios*/
 .grid-syp{
     background-color: $color-base;
     display: grid;
@@ -12,11 +13,13 @@
         "promociones-dos";
     justify-content: center;
     justify-items: center;
+/*estilos de titulo servicios*/    
     .titulo-syp{
         background-color: #b990ef;
         @include m-p(1rem, 1rem); 
         grid-area: titulo-syp;
     }
+/*estilos de servicios 1*/    
     .servicio{
         background-color: $color-sombreado;
         @include m-p(1rem, 1rem); 
@@ -29,6 +32,7 @@
             border: 1px solid black;
         }
     }
+/*estilos de servicios 2*/    
     .servicio-dos{
         background-color: $color-sombreado;
         @include m-p(1rem, 1rem); 
@@ -41,6 +45,7 @@
             border: 1px solid black;
         }
     }
+/*estilos de promociones 1*/    
     .promociones{
         background-color: $color-sombreado;
         @include m-p(1rem, 1rem); 
@@ -53,6 +58,7 @@
             border: 1px solid black;
         }
     } 
+/*estilos de promociones 2*/    
     .promociones-dos{
         background-color: $color-sombreado;
         @include m-p(1rem, 1rem); 
@@ -69,9 +75,9 @@
 
 }
 
-
+/*media query desktop de servicios*/
 @media screen and (min-width:992px){
-
+/*estilos de main desktop servicios*/
     .grid-syp{
         display: grid;
         height: 525px;
@@ -84,7 +90,7 @@
         justify-content: flex-start;
         justify-items: center;
         }
-        
+/*estilos de footer desktop servicios*/        
     .derechos-reservados{
         display: inline;
         padding: 20px;

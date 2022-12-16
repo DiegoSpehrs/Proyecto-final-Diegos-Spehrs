@@ -1,3 +1,4 @@
+/* estilos de main aboust-us*/
 .main-about-us{
     background-color: $color-base;
     height: 530px;
@@ -7,7 +8,8 @@
     grid-template-areas: 
     "titulo"
     "parrafo";
-    
+
+/*estilos de titulo about-us*/    
     .tit-about-us{
         background-color: $color-sombreado;
         display: flex;
@@ -16,6 +18,7 @@
         @include m-p(1rem, 1rem); 
         grid-area: titulo;
     }
+/*estilos de parrafo about-us*/    
     .parrafo{
         
         display: flex;
@@ -29,19 +32,19 @@
     }
 
 }
-
+/*estilos de footer about-us*/
 footer{
     .derechos-reservados{
         display: none;
     }   
 }
 
-
+/*media query tablet about-us*/
 @media screen and (min-width:768px){
     .main-about-us{
         height: 515px;
     }
-    
+/*estilos tablet del footer about-us*/    
     footer{
         .derechos-reservados{
             display: inline;
