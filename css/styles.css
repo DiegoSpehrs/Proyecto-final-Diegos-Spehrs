@@ -151,7 +151,7 @@ footer {
 /* estilos de main aboust-us*/
 .main-about-us {
   background-color: #dcc2f7;
-  height: 530px;
+  height: 870px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.20fr 1fr;
@@ -297,7 +297,8 @@ footer .derechos-reservados {
     margin: 1rem;
     padding: 1rem;
     grid-area: formulario;
-    text-align: center; }
+    text-align: center;
+    border: 1px solid black; }
 
 /*media query tablet de contacto*/
 @media screen and (min-width: 768px) {
